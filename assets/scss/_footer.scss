@@ -1,0 +1,116 @@
+.footer-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0 0;
+
+    .footer-logo {
+        img {
+            width: 153px;
+            height: 73px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            font-weight: 400;
+            margin: 0;
+            padding: 20px 0;
+        }
+    }
+    .footer-support {
+         .title {
+            margin-top: 40px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+         }
+         ul {
+             list-style: none;
+             margin: 0;
+             padding: 0;
+
+             li {
+
+                a {
+                    display: block;
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: 400;
+                    color: $pragraph-color;
+                    margin-bottom: 15px;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+             }
+         }
+    }
+    .footer-contact {
+        p {
+            font-size: 18px;
+
+            a {
+                font-size: 18px;
+                color: $pragraph-color;
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+    .copyright {
+        padding: 30px 0;
+        border-top: 1px solid $pragraph-color;
+        font-size: 17px;
+        line-height: 40px;
+    }
+}
+
+// Scroll Top Button 
+
+.scroll-top-button {
+	position: fixed;
+	bottom: 0;
+	right: 50px;
+	font-size: 20px;
+	background-color: #B8482F;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+    color: #fff;
+    @include transition(0.3s);
+    
+    &:hover {
+        background-color: $theme-color;
+        color: $white;
+    }
+}
+
+
+// Responsive 
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+    
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+     
+
+} 

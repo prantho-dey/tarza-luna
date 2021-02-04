@@ -1,0 +1,96 @@
+.top-header {
+    padding-top: 11px;
+    padding-bottom: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+
+    .logo {
+        width: 153px;
+        height: 76px;
+    }
+
+    .top-info {
+        display: inline-block;
+        margin-right: 50px;
+        padding-left: 30px;
+        position: relative;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        h4 {
+            font-size: 18px;
+            color: $heading-color;
+            line-height: 28px;
+            margin: 0;
+            padding: 0;
+        }
+        i {
+            position: absolute;
+            left: 0;
+            top: 8px;
+            color: $theme-color;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
+
+.top-social {
+    a {
+        display: inline-block;
+        font-size: 17px;
+        width: 40px;
+        height: 40px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        margin-right: 8px;
+
+    }
+    .facebook {
+        border-color: #3B5999;
+        color: #3B5999;
+
+        &:hover {
+            border-color: transparent;
+            background-color: #3B5999;
+            color: $white;
+        }
+    }
+    .twitter {
+        border-color: #1C9DEC;
+        color: #1C9DEC;
+
+        &:hover {
+            color: $white;
+            background-color: #1C9DEC;
+            border-color: transparent;
+        }
+    }
+    .instagram {
+        border-color: #DD2A7B;
+        color: #DD2A7B;
+
+        &:hover {
+            color: $white;
+            background-color: #DD2A7B;
+            border-color: transparent;
+        }
+    }
+}
+
+// Responsive 
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .top-header {
+        .top-info {
+            margin-right: 10px;
+        }
+    }
+}
+

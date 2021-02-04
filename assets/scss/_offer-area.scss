@@ -1,0 +1,146 @@
+.offer-area {
+
+    .offer-content {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 50px rgba(159, 159, 159, 0.25);
+        padding: 55px 40px;
+        z-index: 99;
+
+        .discunt {
+            color: rgb(255, 255, 255);
+            padding: 12px 40px;
+            padding-left: 0;
+            background-color: #54AC44;
+            display: inline-block;
+            text-transform: uppercase;
+            position: relative;
+            font-weight: bold;
+            font-size: 44px;
+            margin-bottom: 10px;
+
+            &::before {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 60px;
+                background-color: #54AC44;
+                right: 100%;
+                top: 0;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                border-top: 20px solid#54AC44;
+                border-left: 20px solid transparent;
+                top: 100%;
+                left: -60px;
+            }
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 18px;
+            margin: 40px 0;
+        }
+        p {
+            font-size: 20px;
+            line-height: 34px;
+            padding: 0;
+            margin: 0;
+        }
+        .time {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 400;
+            margin: 30px 0;
+        }
+    }
+    .offer-img {
+        margin-left: -144px;
+        position: relative;
+        z-index: -1;
+        width: 792px;
+        max-width: 792px;
+        img {
+           width: 100%; 
+        }
+    }
+}
+.offer-button {
+    font-size: 22px;
+    display: inline-block;
+    font-weight: 500;
+    background-color: $theme-color;
+    color: $white;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    border-radius: 3px;
+
+    &:hover {
+        background-color: #6E2A1B;
+        color: $white;
+    }
+}
+
+
+// Responsive 
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .offer-area {
+        .offer-img {
+            width: 600px;
+            max-width: 600px;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .offer-area {
+        padding-top: 0;
+        .offer-img {
+            margin-left: 0;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 50px;
+        }
+    }
+    
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    
+    .offer-area {
+        padding-top: 0;
+        .offer-img {
+            margin-left: 0;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 50px;
+        }
+        .offer-content {
+            h3 {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .offer-area {
+        padding-top: 0;
+        .offer-img {
+            margin-left: 0;
+            width: 100%;
+            max-width: 100%;
+            margin-top: 50px;
+        }
+        
+    }
+
+} 

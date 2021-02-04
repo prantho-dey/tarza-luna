@@ -1,0 +1,205 @@
+.recipe-area {
+
+    .single-recipe {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .recipe-img {
+        width: 85px;
+        height: 85px;
+        box-shadow: 0px 4px 10px rgba(167, 167, 167, 0.25);
+        border-radius: 50%;
+        background-color: $white;
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+        }
+    }
+    .recipe-content {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+        padding-left: 15px;
+
+        h4 {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: $heading-color;
+            margin: 0;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            a {
+                display: block;
+
+                span {
+                    float: right;
+
+                    &::before {
+                        content: "........................................";
+                        margin: 0 10px;
+                        color: $pragraph-color;
+                    }
+                }
+                &:hover  {
+                    color: $theme-color;
+                }
+            }
+            
+           
+        }
+        p {
+            font-size: 14px;
+            line-height: 17px;
+            display: block;
+            padding: 0;
+            margin: 0;
+
+            span {
+                float: right;
+            }
+            .tag {
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                display: inline-block;
+                padding: 5px 24px;
+                color: #fff;
+                background: $theme-color;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .filter-nav {
+        background-color: #F4F7FC;
+        display: inline-block;
+        text-align: right;
+        padding: 15px;
+        margin-bottom: 20px;
+
+        button {
+            border-width: 0;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: capitalize;
+            background-color: transparent;
+            padding: 10px 25px;
+            color: $pragraph-color;
+            @include transition(.3s);
+
+            &:hover {
+                background-color: $theme-color;
+                color: $white;
+            }
+        }
+        .recipe-active {
+            background-color: $theme-color;
+            color: $white;
+        }
+    }
+    
+    .recipe-number{
+        a {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 27px;
+            color: $pragraph-color;
+            display: inline-block;
+            margin: 0 10px;
+
+            &:hover {
+                color: $heading-color;
+            }
+        }
+        .recipe-number-active {
+            color: $heading-color;
+        }
+    }
+}
+
+
+
+
+
+
+
+// Responsive 
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+    .recipe-area {
+
+        .filter-nav {
+            button {
+                font-size: 18px;
+            }
+        }
+    }
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .recipe-area {
+        
+
+        .recipe-number {
+            margin-top: -20px;
+        }
+
+    }
+    
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .recipe-area {
+        padding-top: 10px;
+        .filter-nav {
+            padding: 0px;
+            button {
+                font-size: 12px;
+                padding: 5px 7px;
+            }
+        }
+        .recipe-number {
+            margin-top: -40px;
+        }
+        .recipe-content {
+            h4 {
+                a {
+                    span{
+                        &::before {
+                            content: "...........";
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .recipe-area {
+        padding-top: 10px;
+        .filter-nav {
+            padding: 5px;
+            button {
+                font-size: 18px;
+                padding: 7px 18px;
+            }
+        }
+        
+        .recipe-number {
+            margin-top: -40px;
+        }
+    }
+
+} 

@@ -1,0 +1,124 @@
+.reservation-area {
+
+    .reservation-img {
+        img {
+            width: 537px;
+            max-width: 537px;
+        }
+    }
+    .reservation-form {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 50px rgba(159, 159, 159, 0.25);
+        padding: 57px 45px;
+        z-index: 99;
+
+        .reservation-form-title {
+            h3 {
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 27px;
+                color: $heading-color;
+            }
+        }
+        .reservation-input {
+            position: relative;
+            input {
+                width: 100%;
+                height: 42px;
+                border-width: 0;
+                border: 1px solid#C0C0C0;
+                margin-bottom: 15px;
+                color: $heading-color;
+                font-weight: 400;
+                padding-left: 45px;
+            }
+            i {
+                position: absolute;
+                left: 12px;
+                top: 36%;
+                transform: translateY(-50%);
+                color: #c0c0c0;
+            }
+        }
+    }
+
+    .reservation-message {
+
+        textarea {
+            width: 100%;
+            height: 123px;
+            color:$heading-color;
+            padding: 11px 15px;
+            border-width: 0;
+            border: 1px solid#C0C0C0;
+        }
+    }
+    .reservation-button {
+        a {
+            background-color: $theme-color;
+            display: inline-block;
+            padding: 16px 40px;
+            color: $white;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 21px;
+            border-radius: 3px;
+
+            &:hover {
+                background-color: #6E2A1B;
+            }
+        }
+    }
+}
+
+// Responsive 
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .reservation-area {
+        padding-top: 0;
+        .reservation-img {
+            margin-bottom: 30px;
+        }
+    }
+    
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .reservation-area {
+        padding-top: 0;
+        .reservation-img {
+            margin-bottom: 30px;
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .reservation-area {
+        padding-top: 0;
+        .reservation-img {
+            margin-bottom: 30px;
+        }
+    }
+
+} 
+
+
+
+
+
+

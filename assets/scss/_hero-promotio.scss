@@ -1,0 +1,139 @@
+.hero-promotion {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 50%);
+        z-index: -1;
+    }
+
+    .hero-promotio-title {
+        padding-top: 175px;
+        padding-bottom: 350px;
+
+        h2 {
+            font-weight: bold;
+            font-size: 71px;
+            line-height: 128%;
+
+        }
+        p {
+            font-size: 20px;
+            line-height: 34px;
+            font-weight: 400;
+            color: $heading-color;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 180px;
+                height: 7px;
+                background-color: $theme-color;
+                left: 0;
+                bottom: -30px;
+            }
+        }
+    }
+}
+
+.breadcrumb-area {
+    .breadcrumb {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: .75rem;
+        list-style: none;
+        background-color: transparent;
+        padding-left: 0;
+        margin-bottom: 0;
+        .breadcrumb-item{
+            a {
+                color: $pragraph-color;
+                font-size: 18px;
+                line-height: 40px;
+
+                &:hover {
+                    color: $theme-color;
+                }
+            }
+        }
+        .breadcrumb-item.active {
+            color: $heading-color;
+            font-size: 18px;
+            line-height: 40px;
+        }
+    }
+}
+
+// Responsive 
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .header-menu {
+        ul {
+            li {
+                a {
+                    font-size: 18px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .header-menu-search {
+            input {
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
+
+
+// Responsive 
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .hero-promotion{
+
+        .hero-promotio-title {
+            padding-top: 100px;
+            padding-bottom: 200px;
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .hero-promotion{
+
+        .hero-promotio-title {
+            padding-top: 100px;
+            padding-bottom: 200px;
+
+             h2 {
+                font-size: 60px;
+            }
+        }
+    }
+    
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+   .hero-promotion{
+
+        .hero-promotio-title {
+            padding-top: 100px;
+            padding-bottom: 200px;
+        }
+    }
+
+} 

@@ -1,0 +1,31 @@
+.main-gallery-area {
+
+    .single-gallery {
+        margin-bottom: 30px;
+    }
+    .gallery-number {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                a {
+                    display: block;
+                    font-weight: bold;
+                    font-size: 22px;
+                    color: $pragraph-color;
+                    margin: 0px 10px;
+
+                    &:hover {
+                        color: $heading-color;
+                    }
+                }
+                .active {
+                    color: $heading-color;
+                }
+            }
+        }
+    }
+}

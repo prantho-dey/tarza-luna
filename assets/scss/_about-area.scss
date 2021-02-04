@@ -1,0 +1,145 @@
+.about-area {
+
+    .about-img {
+        position: relative;
+    }
+    .about-play {
+        position: absolute;
+        width: 202px;
+        height: 106px;
+        background-color: #A02206;
+        text-align: center;
+        line-height: 106px;
+        bottom: 51px;
+        right: -99px;
+
+        i {
+            color: $white;
+            font-size: 18px;
+            width: 57px;
+            height: 57px;
+            border: 1px solid $white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 57px;
+            margin-right: 10px;
+        }
+        span {
+            font-size: 16px;
+            line-height: 19px;
+            color: $white;
+        }
+    }
+    .about-content {
+        padding-right: 28px;
+
+        p {
+            font-size: 20px;
+            line-height: 34px;
+            font-weight: 400;
+        }
+        
+    }
+}
+.about-button {
+    
+    width: 199px;
+    height: 54px;
+    background-color: #6E2A1B;
+    font-weight: bold;
+    font-size: 17px;
+    color: #ffffff;
+    position: relative;
+    display: block;
+    padding: 13px 26px;
+    text-transform: capitalize;
+    margin-top: 25px;
+
+    &:hover {
+        background-color: $theme-color;
+        color: $white;
+    }
+    &:hover i {
+        background-color:  #6E2A1B;
+        color: $white;
+    }
+
+    i {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        background-color: $theme-color;
+        text-align: center;
+        line-height: 42px;
+        top: 6px;
+        right: 6px;
+        border-radius: 5px;
+        font-size: 20px;
+        line-height: 42px !important;
+    }
+}
+.section-title {
+
+    span {
+        font-size: 22px;
+        line-height: 25px;
+        font-family: 'Graduate', cursive;
+        font-weight: 400;
+        color: $theme-color;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-weight: bold;
+        font-size: 47px;
+        line-height: 57px;
+        text-transform: capitalize;
+        margin-top: 10px;
+    }
+}
+
+
+
+// Responsive 
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .about-area {
+        padding-top: 0;
+        .about-img {
+            margin-bottom: 50px;
+        }
+        .about-play {
+            right: 0;
+            bottom: 0;
+        }
+    }
+    
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .about-area {
+        padding-top: 0;
+        .about-img {
+            margin-bottom: 50px;
+        }
+        .about-play {
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+} 
